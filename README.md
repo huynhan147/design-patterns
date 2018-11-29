@@ -26,7 +26,7 @@ Wikipedia mô tả chúng như
 
 ⚠️ Hãy cẩn thận
 -----------------
-- Design patterns không phải là một viên đạn bạc(giải quyết được) cho tất cả các vấn đề của bạn.
+- Design patterns không phải là một giải pháp tuyệt đối(giải quyết được) cho tất cả các vấn đề của bạn.
 - Đừng cố ép buộc phải tuân theo chúng ; có thể có điều xấu xảy ra, nếu làm như vậy. 
 - Hãy nhớ rằng  design patterns là giải pháp **giải quyết** các vấn đề, không phải là giải pháp **tìm** các vấn đề; không nên quá suy nghĩ về nó.
 - Nếu được sử dụng đúng chỗ một cách chính xác, nó có thể là một vị cứu tinh; hoặc ngược lại nó có thể dẫn đến một mớ hỗn độn kinh khủng trong code.
@@ -44,7 +44,7 @@ Creational Design Patterns
 ==========================
 
 Nói một cách đơn giản
-> Creational patterns are được tập trung hướng tới cách khởi tạo một đối tượng hoặc một nhóm đối tượng liên quan.
+> Creational patterns được tập trung hướng tới cách khởi tạo một đối tượng hoặc một nhóm đối tượng liên quan.
 
 Theo Wikipedia :
 > Trong kỹ thuật phần mềm , creational design patterns là mẫu thiết kế đối phó với các cơ chế tạo đối tượng, cố tạo đối tượng theo cách phù hợp với tình huống. Hình thức tạo đối tượng cơ bản có thể dẫn đến các vấn đề về thiết kế hoặc thêm độ phức tạp vào thiết kế. Creational design patterns giải quyết vấn đề này bằng cách nào đó kiểm soát việc tạo đối tượng này.
@@ -59,7 +59,7 @@ Theo Wikipedia :
 🏠 Simple Factory
 --------------
 Ví dụ thực tế : 
-> Hãy xem xét, bạn đang xây dựng một ngôi nhà và bạn cần cửa ra vào. Bạn có thể mặc quần áo thợ mộc, mang một ít gỗ, keo, đinh và tất cả các dụng cụ cần thiết để xây cửa và bắt đầu xây dựng nó trong nhà hoặc bạn chỉ cần gọi nhà máy và nhận cửa được làm xong cho bạn để bạn không cần phải tìm hiểu bất cứ điều gì về việc làm cửa hoặc để đối phó với mớ hỗn độn mà đi kèm với việc làm ra nó..
+> Hãy xem xét, bạn đang xây dựng một ngôi nhà và bạn cần cửa ra vào. Bạn có thể mặc quần áo thợ mộc, mang một ít gỗ, keo, đinh và tất cả các dụng cụ cần thiết để làm ra cửa và bắt đầu xây dựng nó trong nhà hoặc bạn chỉ cần gọi nhà máy và nhận cửa được làm xong cho bạn để bạn không cần phải tìm hiểu bất cứ điều gì về việc làm cửa hoặc để đối phó với mớ hỗn độn mà đi kèm với việc làm ra nó..
 
 Nói một cách đơn giản
 > Simple factory đơn giản là tạo ra một instance cho client mà không làm lộ ra bất kỳ instantiation logic cho client
@@ -99,7 +99,7 @@ class WoodenDoor implements Door
     }
 }
 ```
-Su đó chúng ta có một nhà máy sản xuất cửa (DoorFactory) để tạo ra cửa(makeDoor) và trả về nó
+Sau đó chúng ta có một nhà máy sản xuất cửa (DoorFactory) để tạo ra cửa(makeDoor) và trả về nó
 ```php
 class DoorFactory
 {
