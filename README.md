@@ -569,11 +569,11 @@ var_dump($president1 === $president2); // true
 
 Structural Design Patterns
 ==========================
-In plain words
-> Structural patterns are mostly concerned with object composition or in other words how the entities can use each other. Or yet another explanation would be, they help in answering "How to build a software component?"
+Nói một cách đơn giản : 
+> Structural patterns chủ yếu quan tâm đến thành phần đối tượng hoặc nói cách khác các thực thể có thể sử dụng lẫn nhau. Hoặc giải thích khác sẽ là, nó giúp trả lời "Làm sao để xây dựng một software component?"
 
-Wikipedia says
-> In software engineering, structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships between entities.
+Theo Wikipedia : 
+> Trong kỹ nghệ phần mềm, structural design patterns are design patterns that ease the design by identifying a simple way to realize relationships between entities.
 
  * [Adapter](#-adapter)
  * [Bridge](#-bridge)
