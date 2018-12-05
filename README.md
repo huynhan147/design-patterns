@@ -622,7 +622,7 @@ class AsianLion implements Lion
     }
 }
 ```
-Và thợ săn kỳ vọng sẽ săn mọi thứ implement interface `Lion`.
+Và thợ săn kỳ vọng sẽ săn mọi thứ implement từ interface `Lion`.
 ```php
 class Hunter
 {
@@ -775,7 +775,7 @@ Nói một cách đơn giản :
 > Composite pattern cho phép khách hàng xử lý các đối tượng riêng lẻ theo cách thống nhất..
 
 Theo Wikipedia :
-> rong kĩ nghệ phần mềm, composite pattern là một design pattern thuộc nhóm phân vùng. Composite pattern mô tả về một nhóm các đối tượng  được xử lý cùng một cách giống như một instance của đối tượng. Mục đích của composite là "tạo ra" các đối tượng vào một cấu trúc dạng cây để đại diện cho toàn bộ hệ thống phân cấp. Việc triển khai composite pattern cho phép client xử lý các đối tượng và bố cục riêng lẻ một cách thống nhất.
+> trong kĩ nghệ phần mềm, composite pattern là một design pattern thuộc nhóm phân vùng. Composite pattern mô tả về một nhóm các đối tượng  được xử lý cùng một cách giống như một instance của đối tượng. Mục đích của composite là "tạo ra" các đối tượng vào một cấu trúc dạng cây để đại diện cho toàn bộ hệ thống phân cấp. Việc triển khai composite pattern cho phép client xử lý các đối tượng và bố cục riêng lẻ một cách thống nhất.
 
 **Ví dụ về lập trình**
 
@@ -913,7 +913,7 @@ Theo Wikipedia :
 
 **Ví dụ về lập trình**
 
-Lấy coffee làm ví dụ. Đầu tiên chúng ta có simple coffee implement interface coffee.
+Lấy coffee làm ví dụ. Đầu tiên chúng ta có simplecoffee implement interface coffee.
 
 ```php
 interface Coffee
@@ -1262,7 +1262,7 @@ $door->open('invalid'); // Big no! It ain't possible.
 $door->open('$ecr@t'); // Opening lab door
 $door->close(); // Closing lab door
 ```
-Yet another example would be some sort of data-mapper implementation. For example, I recently made an ODM (Object Data Mapper) for MongoDB using this pattern where I wrote a proxy around mongo classes while utilizing the magic method `__call()`. All the method calls were proxied to the original mongo class and result retrieved was returned as it is but in case of `find` or `findOne` data was mapped to the required class objects and the object was returned instead of `Cursor`.
+Tuy nhiên, một ví dụ khác sẽ là một số loại triển khai trình ánh xạ dữ liệu. Ví dụ, gần đây tôi đã thực hiện một ODM (Object Data Mapper) cho MongoDB bằng cách sử dụng mẫu này, nơi tôi đã viết một proxy xung quanh các lớp mongo trong khi sử dụng phương thức ma thuật `__call ()`. Tất cả các lời gọi phương thức được đưa vào lớp mongo ban đầu và kết quả được truy xuất được trả về vì nó là trong trường hợp dữ liệu `find` hoặc` findOne` được ánh xạ tới các đối tượng lớp được yêu cầu và đối tượng được trả về thay vì `Cursor`.
 
 Behavioral Design Patterns
 ==========================
