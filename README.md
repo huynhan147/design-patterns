@@ -636,7 +636,7 @@ class Hunter
 Bây giờ chúng ta hãy nói rằng chúng ta phải thêm một `WildDog` trong trò chơi của chúng ta để thợ săn có thể săn. Nhưng chúng ta không thể làm điều đó trực tiếp bởi vì dog có một interface khác. Để làm cho nó tương thích với thợ săn của chúng ta, chúng ta sẽ phải tạo một adapter để nó tương thích
 
 ```php
-// This needs to be added to the game
+// Điều đó sẽ được thêm vào game
 class WildDog
 {
     public function bark()
@@ -1262,7 +1262,7 @@ $door->open('invalid'); // Big no! It ain't possible.
 $door->open('$ecr@t'); // Opening lab door
 $door->close(); // Closing lab door
 ```
-Yet another example would be some sort of data-mapper implementation. For example, I recently made an ODM (Object Data Mapper) for MongoDB using this pattern where I wrote a proxy around mongo classes while utilizing the magic method `__call()`. All the method calls were proxied to the original mongo class and result retrieved was returned as it is but in case of `find` or `findOne` data was mapped to the required class objects and the object was returned instead of `Cursor`.
+Tuy nhiên, một ví dụ khác sẽ là một số loại triển khai trình data-mapper. Ví dụ, gần đây tôi đã thực hiện một ODM (Object Data Mapper) cho MongoDB bằng cách sử dụng mẫu này, nơi tôi đã viết một proxy xung quanh các lớp mongo trong khi sử dụng phương thức ma thuật __call (). Tất cả các lời gọi phương thức đã được ủy nhiệm cho lớp mongo ban đầu và kết quả được truy xuất được trả về vì nó là nhưng trong trường hợp find hoặc dữ liệu findOne được ánh xạ tới các đối tượng lớp được yêu cầu và đối tượng được trả về thay cho Cursor.
 
 Behavioral Design Patterns
 ==========================
