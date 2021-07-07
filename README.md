@@ -44,7 +44,7 @@ Creational Design Patterns
 ==========================
 
 Nói một cách đơn giản
-> Creational patterns are được tập trung hướng tới cách khởi tạo một đối tượng hoặc một nhóm đối tượng liên quan.
+> Creational patterns được tập trung hướng tới cách khởi tạo một đối tượng hoặc một nhóm đối tượng liên quan.
 
 Theo Wikipedia :
 > Trong kỹ thuật phần mềm , creational design patterns là mẫu thiết kế đối phó với các cơ chế tạo đối tượng, cố tạo đối tượng theo cách phù hợp với tình huống. Hình thức tạo đối tượng cơ bản có thể dẫn đến các vấn đề về thiết kế hoặc thêm độ phức tạp vào thiết kế. Creational design patterns giải quyết vấn đề này bằng cách nào đó kiểm soát việc tạo đối tượng này.
@@ -59,7 +59,7 @@ Theo Wikipedia :
 🏠 Simple Factory
 --------------
 Ví dụ thực tế : 
-> Hãy xem xét, bạn đang xây dựng một ngôi nhà và bạn cần cửa ra vào. Bạn có thể mặc quần áo thợ mộc, mang một ít gỗ, keo, đinh và tất cả các dụng cụ cần thiết để xây cửa và bắt đầu xây dựng nó trong nhà hoặc bạn chỉ cần gọi nhà máy và nhận cửa được làm xong cho bạn để bạn không cần phải tìm hiểu bất cứ điều gì về việc làm cửa hoặc để đối phó với mớ hỗn độn mà đi kèm với việc làm ra nó..
+> Hãy xem xét, bạn đang xây dựng một ngôi nhà và bạn cần cửa ra vào. Bạn có thể mặc quần áo thợ mộc, mang một ít gỗ, keo, đinh và tất cả các dụng cụ cần thiết để làm cửa và bắt đầu làm nó trong nhà hoặc bạn chỉ cần gọi nhà máy và nhận cửa được làm xong cho bạn để bạn không cần phải tìm hiểu bất cứ điều gì về việc làm cửa hoặc để đối phó với mớ hỗn độn mà đi kèm với việc làm ra nó..
 
 Nói một cách đơn giản
 > Simple factory đơn giản là tạo ra một instance cho client mà không làm lộ ra bất kỳ instantiation logic cho client
@@ -69,7 +69,7 @@ Theo Wikipedia :
 
 **Ví dụ về lập trình**
 
-Đầu tiên chúng ta có một interface Door và implementation
+Đầu tiên chúng ta có một interface Door và được implement
 ```php
 interface Door
 {
@@ -99,7 +99,7 @@ class WoodenDoor implements Door
     }
 }
 ```
-Su đó chúng ta có một nhà máy sản xuất cửa (DoorFactory) để tạo ra cửa(makeDoor) và trả về nó
+Sau đó chúng ta có một nhà máy sản xuất cửa (DoorFactory) để tạo ra cửa(makeDoor) và trả về nó
 ```php
 class DoorFactory
 {
@@ -141,7 +141,7 @@ Theo Wikipedia :
 
  **Ví dụ về lập trình**
 
-Lấy ví dụ về người quản lý tuyển dụng của chúng ta ở trên. Đầu tiên chúng ta có một interface interviewer và một số cái implementations nó
+Lấy ví dụ về người quản lý tuyển dụng của chúng ta ở trên. Đầu tiên chúng ta có một interface interviewer và một số cái implements nó
 
 ```php
 interface Interviewer
@@ -222,13 +222,13 @@ Ví dụ thực tế
 > Mở rộng ví dụ về cửa ở trên Simple Factory. Dựa trên việc bạn cần là lấy một chiếc cửa gỗ từ cửa hàng cửa gỗ, cửa sắt từ cửa hàng sắt hoặc cửa nhựa từ một cửa hàng liên quan. thêm vào đó là bạn cần những người với các đặc điểm khác nhau để phù hợp với cái cửa đó, ví dụ như bạn cần một thợ mộc cho chiếc cửa gỗ, thợ hàn cho chiếc cửa sắt,... Và giờ bạn đã thấy sự phụ thuộc khác nhau giữa những chiếc cửa, cửa gỗ cần thợ mộc, cửa sắt cần thợ hàn,..
 
 Nói một cách đơn giản
-> Một factory của các factory; một factory nhóm những cá thể nhưng các factory liên kết/phụ thuộc lẫn nhau mà không cần chỉ rõ các class cụ thể của nó.
+> Một factory của các factory; một nhóm factory đơn lẻ nhưng các factory liên kết/phụ thuộc lẫn nhau mà không cần chỉ rõ các class cụ thể của nó.
 
 Theo Wikipedia:
 > The abstract factory pattern cung cấp một cách để gói gọn một nhóm các factory riêng lẻ có một chủ đề chung mà không cần chỉ định các class cụ thể của nó
 **Ví dụ về lập trình**
 
-Theoc ví dụ về cửa ở trên. Đầu tiên chúng ta có `Door` interface và một số cái implementation nó
+Theoc ví dụ về cửa ở trên. Đầu tiên chúng ta có `Door` interface và một số cái implements nó
 
 ```php
 interface Door
@@ -447,7 +447,7 @@ Khi có thể có một số đặc điểm của object và tránh việc chố
 🐑 Prototype
 ------------
 Ví dụ thực tế
-> Bạn có nhớ dolly? Con cừu mà được nhân bản! Cho phép tôi không đi vàocacs thông tin chi tiết nhưng điểm mấu chốt ở đây là tất cả những thứ về nhân bản.
+> Bạn có nhớ dolly? Con cừu mà được nhân bản! Cho phép tôi không đi vào các thông tin chi tiết nhưng điểm mấu chốt ở đây là tất cả những thứ về nhân bản.
 
 Nói một cách đơn giản
 > Tạo đối tượng dựa trên đối tượng hiện có thông qua nhân bản.
